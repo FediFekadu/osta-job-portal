@@ -1,0 +1,27 @@
+# Security for uploads directory
+# Prevent direct access to uploaded files except images
+<Files "*">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+# Allow access to common image formats
+<FilesMatch "\.(jpg|jpeg|png|gif)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Prevent execution of PHP files in uploads directory
+<FilesMatch "\.php$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Disable directory browsing
+Options -Indexes
+
+# Prevent access to sensitive file types
+<FilesMatch "\.(inc|conf|config|sql|bak|backup|old|tmp)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>

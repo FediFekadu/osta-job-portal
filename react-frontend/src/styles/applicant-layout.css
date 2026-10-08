@@ -1,0 +1,166 @@
+/* Applicant Layout Styles */
+.applicant-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.applicant-layout .layout-sidebar {
+  width: 280px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.applicant-layout .sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.applicant-layout .sidebar-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.applicant-layout .sidebar-user {
+  padding: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+}
+
+.applicant-layout .user-avatar i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.applicant-layout .user-info h4 {
+  margin: 10px 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.applicant-layout .user-info p {
+  margin: 0;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.applicant-layout .sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.applicant-layout .sidebar-nav li {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.applicant-layout .sidebar-nav a {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.applicant-layout .sidebar-nav a:hover,
+.applicant-layout .sidebar-nav a.active {
+  background-color: rgba(255,255,255,0.1);
+  color: white;
+  padding-left: 25px;
+}
+
+.applicant-layout .sidebar-nav a i {
+  width: 20px;
+  margin-right: 12px;
+  text-align: center;
+}
+
+.applicant-layout .sidebar-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.applicant-layout .logout-btn {
+  width: 100%;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.applicant-layout .logout-btn:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.applicant-layout .logout-btn i {
+  margin-right: 8px;
+}
+
+.applicant-layout .layout-main {
+  flex: 1;
+  margin-left: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.applicant-layout .main-header {
+  background: white;
+  padding: 15px 30px;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.applicant-layout .main-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #495057;
+}
+
+.applicant-layout .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.applicant-layout .user-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.applicant-layout .btn-logout {
+  background: #dc3545;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.applicant-layout .btn-logout:hover {
+  background: #c82333;
+}
+
+.applicant-layout .main-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
